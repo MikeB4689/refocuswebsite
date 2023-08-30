@@ -1,0 +1,416 @@
+@media only screen and (min-width:375px) {
+    body {
+        .container {
+
+            padding: 20px 60px;
+
+            main {
+                width: 100%;
+
+                .main-container {
+
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .card-holder {
+                        width: 420px;
+                        background-color: white;
+                        padding: 10px;
+
+
+
+                        .image-container {
+                            height: 120px;
+
+                            .image-layer {
+                                height: 120px;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            footer {
+                padding: 10px 10px;
+
+                .socials {
+                    ul {
+                        li {
+                            i {
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (min-width:455px) {
+    body {
+        .container {
+
+            main {
+
+                .main-container {
+                    .card-holder {
+                        max-width: 420px;
+                        max-height: 300px;
+                        background-color: white;
+
+
+
+
+                        .image-container {
+                            height: 150px;
+
+
+                        }
+                    }
+                }
+            }
+
+            footer {
+                padding: 10px 10px;
+
+                .socials {
+                    width: 60%;
+
+                    ul {
+
+
+                        li {
+                            i {
+                                font-size: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+@media only screen and (min-width:700px) {
+    body {
+
+        .container {
+            header {
+                h1 {
+                    font-size: 20px;
+                }
+
+                .menu-icon {
+                    display: none;
+
+                }
+
+                nav {
+
+                    position: static;
+                    align-items: center;
+                    width: 80%;
+                    height: 50px;
+                    display: flex;
+                    background-color: transparent;
+                    justify-content: center;
+                    padding: 0;
+                    gap: 20px;
+
+
+                    ul {
+                        transform: translateX(0);
+                        width: 60%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        li {
+                            list-style: none;
+
+                            a {
+                                font-size: 12px;
+                                font-weight: 700;
+                                color: #9D9DB5;
+                                transition: .5s ease;
+                            }
+
+                            a:hover {
+                                color: yellow;
+                            }
+
+                            a.active {
+                                color: yellow;
+                            }
+                        }
+                    }
+
+                    .log-in {
+                        transform: translateX(0);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: row;
+                        gap: 10px;
+                        padding: 0;
+
+                        #login {
+
+                            display: flex;
+                            align-items: center;
+                            width: 50px;
+                            height: 30px;
+
+                            border: 1px solid #9D9DB5;
+                            justify-content: center;
+                            border-radius: 40px;
+
+
+                        }
+
+                        p {
+                            font-size: 12px;
+
+
+
+                            a {
+                                color: #9D9DB5;
+                                font-weight: 700;
+
+
+                            }
+
+
+
+                        }
+
+
+                    }
+
+
+                }
+            }
+
+            main {
+
+
+                .main-container {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+
+
+                    .card-holder {
+                        max-width: 320px;
+                        max-height: 300px;
+                        background-color: white;
+
+
+
+
+                        .image-container {
+                            height: 150px;
+
+                            .image-layer {
+                                height: 120px;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            footer {
+                width: 100%;
+                flex-direction: row;
+                padding: 10px 10px;
+                gap: 20px;
+
+                .socials {
+                    width: 80%;
+                    justify-content: center;
+
+
+                    ul {
+                        width: 80%;
+
+
+                        li {
+                            i {
+                                font-size: 35px;
+
+
+                            }
+                        }
+                    }
+
+                    #terms {
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+
+
+                }
+
+
+
+
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (min-width:975px) {
+    body {
+
+
+
+        .container {
+
+            header {
+                padding: 0 40px;
+
+
+                h1 {
+                    font-size: 40px;
+                }
+
+                .menu-icon {
+                    display: none;
+
+                }
+
+                nav {
+                    width: 70%;
+
+
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+
+
+                    ul {
+                        width: 60%;
+                        display: flex;
+                        justify-content: space-between;
+
+                        li {
+                            list-style: none;
+
+                            a {
+                                font-size: 16px;
+                                font-weight: 700;
+                                color: #9D9DB5;
+
+
+                            }
+                        }
+                    }
+
+
+
+                    .log-in {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        #login {
+                            display: flex;
+                            align-items: center;
+                            width: 60px;
+                            height: 30px;
+                            padding: 10px 10px;
+                            border: 1px solid #9D9DB5;
+                            justify-content: center;
+                            border-radius: 40px;
+                        }
+
+                        p {
+                            font-size: 12px;
+
+                            a {
+                                font-size: 16px;
+                                font-weight: 700;
+                                color: #9D9DB5;
+                            }
+
+
+                        }
+
+
+
+                    }
+
+
+                }
+
+
+            }
+
+
+            main {
+
+                .main-container {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 20px;
+
+
+                    .card-holder {
+                        max-width: 320px;
+                        max-height: 300px;
+                        background-color: white;
+
+
+
+
+                        .image-container {
+                            height: 150px;
+
+                            .image-layer {
+                                height: 120px;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            footer {
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 10px 10px;
+                gap: 40px;
+
+                .socials {
+                    width: 50%;
+                    justify-content: center;
+                    align-self: center;
+
+                    ul {
+                        width: 60%;
+
+                        li {
+                            i {
+                                font-size: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}

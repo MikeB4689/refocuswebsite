@@ -1,1 +1,323 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1200px;
+  background-color: #10131C;
+}
+.container .top-container {
+  display: flex;
+  gap: 2px;
+}
+.container .top-container p a {
+  color: #FFF;
+}
+.container header {
+  background-color: #192140;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  position: relative;
+}
+.container header h1 {
+  font-size: 20px;
+  color: #DCF10D;
+}
+.container header .menu-icon i {
+  font-size: 30px;
+  color: #FFF;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.container header .menu-icon:hover i {
+  color: #DCF10D;
+}
+.container header nav {
+  width: 0;
+  padding-top: 10px;
+  background-color: #10131C;
+  position: absolute;
+  height: 200px;
+  z-index: 2;
+  top: 50px;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+.container header nav ul {
+  transform: translateX(-200px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container header nav ul li {
+  list-style: none;
+}
+.container header nav ul li a {
+  color: #9D9DB5;
+  transition: 0.5s ease;
+}
+.container header nav ul li a:hover {
+  color: #DCF10D;
+}
+.container header nav ul li a.active {
+  color: #DCF10D;
+}
+.container header nav .log-in {
+  transform: translateX(-300px);
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container header nav .log-in a {
+  color: #9D9DB5;
+}
+.container header nav.active {
+  width: 100%;
+}
+.container header nav.active ul {
+  transform: translateX(0);
+}
+.container header nav.active .log-in {
+  transform: translateX(0);
+}
+.container main {
+  width: 100%;
+  background-color: #F8F9FC;
+}
+.container main .main-container {
+  width: 100%;
+}
+.container main .main-container .card-holder {
+  min-width: 255px;
+}
+.container main .main-container .card-holder .image-container {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #192140 0%, rgba(2, 2, 2, 0) 100%);
+}
+.container main .main-container .card-holder .image-container .image-layer {
+  position: absolute;
+  padding: 40px 40px;
+  transform: translateY(-200px);
+  transition: 0.6s ease-in-out;
+  z-index: 1;
+}
+.container main .main-container .card-holder .image-container .image-layer p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #FFF;
+}
+.container main .main-container .card-holder .image-container .image-layer #close-card {
+  border: 2px solid #9D9DB5;
+  width: 20px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 1;
+}
+.container main .main-container .card-holder .image-container .image-layer #close-card i {
+  font-size: 16px;
+  transition: 0.5s ease;
+}
+.container main .main-container .card-holder .image-container .image-layer #close-card:hover {
+  border-color: red;
+}
+.container main .main-container .card-holder .image-container .image-layer #close-card:hover i {
+  color: white;
+}
+.container main .main-container .card-holder .image-container .image-layer.active {
+  transform: translateY(0);
+}
+.container main .main-container .card-holder .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.container main .main-container .card-holder .card-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  gap: 5px;
+}
+.container main .main-container .card-holder .card-info #check-mark {
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.container main .main-container .card-holder .card-info #check-mark p {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #9D9DB5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container main .main-container .card-holder .card-info #check-mark p i {
+  font-size: 12px;
+  color: #9D9DB5;
+}
+.container main .main-container .card-holder .card-info #check-mark:hover p {
+  border-color: #0266FF;
+}
+.container main .main-container .card-holder .card-info #check-mark:hover p i {
+  color: #0266FF;
+}
+.container main .main-container .card-holder .card-info .dates-likes {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #10131C;
+  padding: 5px;
+}
+.container main .main-container .card-holder .card-info .dates-likes #date p {
+  border: 1px solid #9D9DB5;
+  color: #9D9DB5;
+  font-size: 12px;
+  border-radius: 40px;
+  padding: 5px;
+}
+.container main .main-container .card-holder .card-info .dates-likes #likes {
+  display: flex;
+  gap: 5px;
+}
+.container main .main-container .card-holder .card-info .dates-likes #likes p {
+  display: flex;
+  align-items: center;
+  color: #9D9DB5;
+}
+.container main .main-container .card-holder .card-info .dates-likes #likes p i {
+  font-size: 16px;
+}
+.container main .main-container .card-holder .card-info .dates-likes #likes:hover i {
+  color: #0266FF;
+}
+.container main .main-container .card-holder.delete {
+  display: none;
+}
+.container footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 40px;
+  gap: 10px;
+}
+.container footer .blog-courses {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container footer .blog-courses #blog {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container footer .blog-courses #blog h3 {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+}
+.container footer .blog-courses #blog ul {
+  display: flex;
+  justify-content: space;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container footer .blog-courses #blog ul li {
+  list-style-type: none;
+}
+.container footer .blog-courses #blog ul li a {
+  font-size: 12px;
+  color: #D7F8FF;
+  text-decoration: none;
+}
+.container footer .blog-courses #courses {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container footer .blog-courses #courses h3 {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+}
+.container footer .blog-courses #courses ul {
+  display: flex;
+  justify-content: space;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container footer .blog-courses #courses ul li {
+  list-style-type: none;
+}
+.container footer .blog-courses #courses ul li a {
+  font-size: 12px;
+  color: #D7F8FF;
+  text-decoration: none;
+}
+.container footer .socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container footer .socials h3 {
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 700;
+}
+.container footer .socials ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.container footer .socials ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+  border-radius: 50%;
+  background-color: #10131C;
+  width: 25px;
+  height: 25px;
+}
+.container footer .socials ul li a {
+  color: #9D9DB5;
+  font-size: 16px;
+}
+.container footer .socials #terms {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+}
+.container footer .socials #terms p {
+  font-size: 12px;
+  color: #9D9DB5;
+}
+.container footer .socials #terms p a {
+  text-decoration: none;
+  color: #9D9DB5;
+}/*# sourceMappingURL=main.css.map */
